@@ -1,0 +1,60 @@
+﻿dotnet : 
+At line:1 char:582
++ ... d-prompting; dotnet run --project src/ModelLab -- EXP-04 2>&1 | Tee-O ...
++                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+.NET 10.0 — Zapraszamy!
+---------------------
+Wersja zestawu SDK: 10.0.403
+
+Telemetria
+---------
+Narzędzia platformy .NET zbierają dane użycia, aby ułatwić nam ulepszanie środowiska. Są one zbierane przez firmę Micro
+soft i udostępniane społeczności. Możesz zrezygnować z telemetrii, ustawiając zmienną środowiskową DOTNET_CLI_TELEMETRY
+_OPTOUT na wartość „1” lub „true” przy użyciu ulubionej powłoki.
+
+Dowiedz się więcej na temat telemetrii narzędzi interfejsu wiersza polecenia programu .NET Core: https://aka.ms/dotnet-
+cli-telemetry
+
+
+----------------Instalował certyfikat deweloperski https ASP.NET Core.
+Aby zaufać certyfikatowi, uruchom polecenie "dotnet dev-certs https --trust"
+Dowiedz się więcej o https: https://aka.ms/dotnet-https
+
+----------------
+Napisz swoją pierwszą aplikację: https://aka.ms/dotnet-hello-world
+Dowiedz się, co nowego: https://aka.ms/dotnet-whats-new
+Zapoznaj się z dokumentacją: https://aka.ms/dotnet-docs
+Zgłoś problemy i znajdź źródło w witrynie GitHub: https://github.com/dotnet/core
+Użyj polecenia „dotnet --help”, aby wyświetlić dostępne polecenia, lub odwiedź stronę: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+
+Wariant: prompt
+✓ NOTE-001 "Trzecie piętro, winda po prawej" => floor=3, elevator=true (oczekiwano: floor=3, elevator=true)
+✓ NOTE-002 "2p bez windy, drzwi na końcu" => floor=2, elevator=false (oczekiwano: floor=2, elevator=false)
+✓ NOTE-003 "Parter, wejście od podwórza" => floor=0, elevator=null (oczekiwano: floor=0, elevator=null)
+✓ NOTE-004 "IV piętro, lokal 12" => floor=4, elevator=null (oczekiwano: floor=4, elevator=null)
+✓ NOTE-005 "Winda na końcu korytarza" => floor=null, elevator=true (oczekiwano: floor=null, elevator=true)
+✓ NOTE-006 "Mieszkanie 15, domofon 15" => floor=null, elevator=null (oczekiwano: floor=null, elevator=null)
+✓ NOTE-007 "4 piętro, winda tylko do 3" => floor=4, elevator=true (oczekiwano: floor=4, elevator=true)
+✓ NOTE-008 "Piętro -1, brak windy" => floor=-1, elevator=false (oczekiwano: floor=-1, elevator=false)
+✓ NOTE-009 "Drugie lub trzecie piętro" => floor=null, elevator=null (oczekiwano: floor=null, elevator=null)
+✓ NOTE-010 "Winda nie działa, dostawa na 5p" => floor=5, elevator=true (oczekiwano: floor=5, elevator=true)
+Floor accuracy: 100%, Elevator accuracy: 100%, Exact match: 100%, poprawny JSON: 10/10, średni czas: 1582 ms
+
+Wariant: json-schema
+✓ NOTE-001 "Trzecie piętro, winda po prawej" => floor=3, elevator=true (oczekiwano: floor=3, elevator=true)
+✓ NOTE-002 "2p bez windy, drzwi na końcu" => floor=2, elevator=false (oczekiwano: floor=2, elevator=false)
+✓ NOTE-003 "Parter, wejście od podwórza" => floor=0, elevator=null (oczekiwano: floor=0, elevator=null)
+✓ NOTE-004 "IV piętro, lokal 12" => floor=4, elevator=null (oczekiwano: floor=4, elevator=null)
+✓ NOTE-005 "Winda na końcu korytarza" => floor=null, elevator=true (oczekiwano: floor=null, elevator=true)
+✓ NOTE-006 "Mieszkanie 15, domofon 15" => floor=null, elevator=null (oczekiwano: floor=null, elevator=null)
+✓ NOTE-007 "4 piętro, winda tylko do 3" => floor=4, elevator=true (oczekiwano: floor=4, elevator=true)
+✓ NOTE-008 "Piętro -1, brak windy" => floor=-1, elevator=false (oczekiwano: floor=-1, elevator=false)
+✓ NOTE-009 "Drugie lub trzecie piętro" => floor=null, elevator=null (oczekiwano: floor=null, elevator=null)
+✗ NOTE-010 "Winda nie działa, dostawa na 5p" => floor=5, elevator=null (oczekiwano: floor=5, elevator=true)
+Floor accuracy: 100%, Elevator accuracy: 90%, Exact match: 90%, poprawny JSON: 10/10, średni czas: 1441 ms
+
+Wyniki zapisano w C:\Users\adbag\Desktop\AAI\pw-mini-ai-agents-dotnet\docs\labs\03-models-and-prompting\results\results.csv
